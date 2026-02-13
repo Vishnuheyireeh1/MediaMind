@@ -11,10 +11,10 @@ const Header = () => {
   const lastScrollY = useRef(0);
 
   // AUTO-OPEN MODAL (10 seconds)
-  useEffect(() => {
-    const timer = setTimeout(() => setIsModalOpen(true), 10000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setIsModalOpen(true), 10000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   // Scroll Handling
   useEffect(() => {
@@ -100,7 +100,7 @@ const Header = () => {
           {/* Right Section */}
           <div className="flex items-center gap-8">
             <button 
-              onClick={() => setIsModalOpen(true)}
+              // onClick={() => setIsModalOpen(true)}
               className="hidden md:block text-[10px] font-black uppercase tracking-[0.2em] text-white border-b border-white/20 hover:border-[#B2278C] hover:text-[#B2278C] transition-all pb-1"
             >
               Let's Connect
